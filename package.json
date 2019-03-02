@@ -1,0 +1,35 @@
+{
+  "name": "@hellroot/stylelint-config",
+  "version": "1.0.0",
+  "description": "Stylelint config rule set",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellroot/stylelint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hellroot/stylelint-config/issues"
+  },
+  "keywords": [
+    "prettier",
+    "stylelint",
+    "config"
+  ],
+  "files": [
+    "index.json"
+  ],
+  "main": "index.json",
+  "dependencies": {
+    "stylelint-config-prettier": "5.0.0",
+    "stylelint-config-recommended": "2.1.0",
+    "stylelint-order": "2.0.0",
+    "stylelint-prettier": "1.0.6"
+  },
+  "peerDependencies": {
+    "prettier": "*",
+    "stylelint": "*"
+  },
+  "devDependencies": {
+    "prettier": "1.16.4"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "extends": ["stylelint-config-recommended", "stylelint-prettier/recommended"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "order/properties-order": [
+      [
+        {
+          "groupName": "Positioning",
+          "emptyLineBefore": "always",
+          "properties": ["position", "z-index", "top", "right", "bottom", "left"]
+        },
+        {
+          "groupName": "Display & Box Model",
+          "emptyLineBefore": "always",
+          "properties": [
+            "display",
+            "overflow",
+            "width",
+            "min-width",
+            "max-width",
+            "height",
+            "min-height",
+            "max-height",
+            "box-sizing",
+            "flex",
+            "flex-basis",
+            "flex-direction",
+            "flex-flow",
+            "flex-grow",
+            "flex-shrink",
+            "flex-wrap",
+            "align-content",
+            "align-items",
+            "align-self",
+            "justify-content",
+            "order",
+            "padding",
+            "padding-top",
+            "padding-right",
+            "padding-bottom",
+            "padding-left",
+            "border",
+            "border-top",
+            "border-right",
+            "border-bottom",
+            "border-left",
+            "margin",
+            "margin-top",
+            "margin-right",
+            "margin-bottom",
+            "margin-left"
+          ]
+        },
+        {
+          "groupName": "Borders",
+          "emptyLineBefore": "always",
+          "properties": [
+            "border",
+            "border-width",
+            "border-style",
+            "border-color",
+            "border-top",
+            "border-top-width",
+            "border-top-style",
+            "border-top-color",
+            "border-right",
+            "border-right-width",
+            "border-right-style",
+            "border-right-color",
+            "border-bottom",
+            "border-bottom-width",
+            "border-bottom-style",
+            "border-bottom-color",
+            "border-left",
+            "border-left-width",
+            "border-left-style",
+            "border-left-color"
+          ]
+        }
+      ],
+      { "unspecified": "bottomAlphabetical" }
+    ]
+  }
+}
