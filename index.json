@@ -2,26 +2,28 @@
   "extends": ["stylelint-config-recommended", "stylelint-prettier/recommended"],
   "plugins": ["stylelint-order"],
   "rules": {
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["local", "global"]
+      }
+    ],
     "order/properties-order": [
       [
         {
           "groupName": "Positioning",
           "emptyLineBefore": "always",
-          "properties": ["position", "z-index", "top", "right", "bottom", "left"]
+          "properties": ["position", "top", "right", "bottom", "left", "float", "clear", "z-index"]
         },
         {
-          "groupName": "Display & Box Model",
+          "groupName": "Layout",
           "emptyLineBefore": "always",
           "properties": [
             "display",
+            "visibility",
             "overflow",
-            "width",
-            "min-width",
-            "max-width",
-            "height",
-            "min-height",
-            "max-height",
-            "box-sizing",
+            "overflow-x",
+            "overflow-y",
             "flex",
             "flex-basis",
             "flex-direction",
@@ -29,26 +31,57 @@
             "flex-grow",
             "flex-shrink",
             "flex-wrap",
+            "order",
             "align-content",
             "align-items",
             "align-self",
             "justify-content",
-            "order",
-            "padding",
-            "padding-top",
-            "padding-right",
-            "padding-bottom",
-            "padding-left",
-            "border",
-            "border-top",
-            "border-right",
-            "border-bottom",
-            "border-left",
+            "justify-items",
+            "justify-self",
+            "place-content",
+            "place-items",
+            "place-self",
+            "grid",
+            "grid-area",
+            "grid-auto-columns",
+            "grid-auto-flow",
+            "grid-auto-rows",
+            "grid-column",
+            "grid-column-end",
+            "grid-column-gap",
+            "grid-column-start",
+            "grid-gap",
+            "grid-row",
+            "grid-row-end",
+            "grid-row-gap",
+            "grid-row-start",
+            "grid-template",
+            "grid-template-areas",
+            "grid-template-columns",
+            "grid-template-rows"
+          ]
+        },
+        {
+          "groupName": "Box model",
+          "emptyLineBefore": "always",
+          "properties": [
+            "box-sizing",
+            "width",
+            "min-width",
+            "max-width",
+            "height",
+            "min-height",
+            "max-height",
             "margin",
             "margin-top",
             "margin-right",
             "margin-bottom",
-            "margin-left"
+            "margin-left",
+            "padding",
+            "padding-top",
+            "padding-right",
+            "padding-bottom",
+            "padding-left"
           ]
         },
         {
@@ -78,7 +111,36 @@
           ]
         }
       ],
-      { "unspecified": "bottomAlphabetical" }
+      {
+        "groupName": "Animations & Transforms",
+        "emptyLineBefore": "always",
+        "properties": [
+          "transition",
+          "transition-delay",
+          "transition-duration",
+          "transition-property",
+          "transition-timing-function",
+          "animation",
+          "animation-delay",
+          "animation-direction",
+          "animation-duration",
+          "animation-fill-mode",
+          "animation-iteration-count",
+          "animation-name",
+          "animation-play-state",
+          "animation-timing-function",
+          "perspective",
+          "perspective-origin",
+          "rotate",
+          "scale",
+          "transform",
+          "transform-origin"
+        ]
+      },
+      {
+        "unspecified": "bottomAlphabetical",
+        "emptyLineBeforeUnspecified": "always"
+      }
     ]
   }
 }
