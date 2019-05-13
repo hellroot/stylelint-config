@@ -2,6 +2,12 @@
   "extends": ["stylelint-config-recommended", "stylelint-prettier/recommended"],
   "plugins": ["stylelint-order"],
   "rules": {
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["local", "global"]
+      }
+    ],
     "order/properties-order": [
       [
         {
