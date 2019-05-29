@@ -20,7 +20,7 @@
   ],
   "main": "index.json",
   "dependencies": {
-    "stylelint-config-prettier": "5.1.0",
+    "stylelint-config-prettier": "5.2.0",
     "stylelint-config-recommended": "2.2.0",
     "stylelint-order": "3.0.0",
     "stylelint-prettier": "1.1.0"
@@ -30,6 +30,6 @@
     "stylelint": "*"
   },
   "devDependencies": {
-    "prettier": "1.17.0"
+    "prettier": "1.17.1"
   }
 }
