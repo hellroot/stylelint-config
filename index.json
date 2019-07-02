@@ -107,7 +107,12 @@
             "border-left",
             "border-left-width",
             "border-left-style",
-            "border-left-color"
+            "border-left-color",
+            "border-radius",
+            "border-top-left-radius",
+            "border-top-right-radius",
+            "border-bottom-right-radius",
+            "border-bottom-left-radius"
           ]
         },
         {
